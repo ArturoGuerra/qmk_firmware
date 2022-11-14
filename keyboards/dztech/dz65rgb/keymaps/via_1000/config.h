@@ -16,16 +16,9 @@
 
 #pragma once
 
-#ifdef KEYBOARD_dztech_dz65rgb_v1
-    #include "v1.h"
-#endif
-#ifdef KEYBOARD_dztech_dz65rgb_v2
-    #include "v2.h"
-#endif
-#ifdef KEYBOARD_dztech_dz65rgb_v3
-    #include "v3.h"
-#endif
-#ifdef KEYBOARD_dztech_dz65rgb_v3_1
-    #include "v3_1.h"
-#endif
-#include "quantum.h"
+#define USB_POLLING_INTERVAL_MS 1
+#define QMK_KEYS_PER_SCAN 12
+
+#undef ENABLE_RGB_MATRIX_PIXEL_FLOW
+#undef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
+#undef ENABLE_RGB_MATRIX_PIXEL_RAIN
